@@ -28,7 +28,7 @@ cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
     inverseOf_x <- x$getinverse()
     if (!is.null(inverseOf_x)) {
-        message("getting cached inverse matrix")
+        message("retrieving the cached inverse matrix")
         return(inverseOf_x)
     } else {
         inverseOf_x <- solve(x$get())
